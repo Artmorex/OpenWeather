@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Param, Query, UseInterceptors } from '@nestjs/common';
 import { AppService } from './app.service';
-import { LoggingInterceptor } from "./logging.interceptor";
+import { TransformReportsInterceptor } from "./transform.interceptor";
 
 @Controller()
 export class AppController {
@@ -11,7 +11,7 @@ export class AppController {
     return this.appService.health();
   }
 
-  @UseInterceptors(LoggingInterceptor)
+  @UseInterceptors(TransformReportsInterceptor)
   @Get('/weather?')
   getWeatherForecasts(@Query('lat') lat: number, @Query('long') long: number, @Query('part') part?: string): Promise<object> {
     return this.appService.getWeatherForecasts(lat, long, part);

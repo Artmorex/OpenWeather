@@ -26,7 +26,7 @@ export class AppService {
         part: part
       },
     });
-    console.log(JSON.stringify(report, null, 2))
+    //console.log(JSON.stringify(report, null, 2))
     //Present it as in sample-response.json using interseptor
     return report
   }
@@ -54,7 +54,6 @@ export class AppService {
         hourly: data.hourly
       });
 
-    console.log(JSON.stringify(report, null, 2))
     return data;
   }
 
