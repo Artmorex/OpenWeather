@@ -10,12 +10,12 @@ export class WeatherReports extends Model<WeatherReports> {
     })
     report_id: UUID;
     @Column({
-        type: DataType.FLOAT,
+        type: DataType.DOUBLE,
         allowNull: false,
     })
     lat: number;
     @Column({
-        type: DataType.FLOAT,
+        type: DataType.DOUBLE,
         allowNull: false,
     })
     long: number;
