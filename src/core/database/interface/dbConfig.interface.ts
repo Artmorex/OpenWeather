@@ -13,3 +13,14 @@ export interface IDatabaseConfig {
     test: IDatabaseConfigAttributes;
     production: IDatabaseConfigAttributes;
 }
+
+// export interface IDatabaseConfigAttributes {
+//     report_id: string,
+//     lat: string;
+//     lon: string;
+//     timezone?: string;
+//     timezone_offset?: string;
+//     current?: JSON;
+//     hourly?: JSON;
+//     daily?: JSON;
+// }
