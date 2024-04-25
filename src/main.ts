@@ -12,7 +12,9 @@ async function bootstrap() {
   //enable swagger
   const config = new DocumentBuilder()
     .setTitle('Weather API Documentation')
-    .setDescription('Data gathered from https://openweathermap.org/api. Results saved to PostgreSQL.')
+    .setDescription(
+      'Data gathered from https://openweathermap.org/api. Results saved to PostgreSQL.',
+    )
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);

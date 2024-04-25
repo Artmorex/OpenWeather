@@ -16,7 +16,9 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Fetching weather: http://localhost:3000/api/v1/weather"', () => {
-      expect(appController.healthCheck()).toBe('Fetching weather: http://localhost:3000/api/v1/weather');
+      expect(appController.healthCheck()).toBe(
+        'Fetching weather: http://localhost:3000/api/v1/weather',
+      );
     });
   });
 });
